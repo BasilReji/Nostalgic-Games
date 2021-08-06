@@ -6,7 +6,9 @@ function QuizGame() {
   const [start, setStart] = useState(false);
 
   return (
-    <div className="quiz">{start ? <Quiz /> : <Start props={setStart} />}</div>
+    <div className="quiz">
+      {start ? <Quiz setStart={setStart} /> : <Start props={setStart} />}
+    </div>
   );
 }
 

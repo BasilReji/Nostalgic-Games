@@ -11,8 +11,8 @@ const Points = styled.p`
   margin-bottom: 3em;
 `;
 
-const GameOver = ({ pts }) => {
-  const refreshPage = () => window.location.reload();
+const GameOver = ({ pts, setStart }) => {
+  const refreshPage = () => setStart(false);
 
   return (
     <>
