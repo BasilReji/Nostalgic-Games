@@ -1,11 +1,4 @@
-.snake-xenzia {
-  h3 {
-    color: lightcyan;
-    font-weight: bold;
-    text-decoration-line: underline;
-    font-size: 30px;
-    text-align: center;
-  }
+
   #GameBoard {
     position: relative;
     margin: auto;
@@ -28,28 +21,29 @@
       color: greenyellow;
     }
 
-    #GameOverText {
-      color: #ca0000;
-      font-weight: bold;
-      text-decoration-line: underline;
-    }
-
-    #PressSpaceText {
-      color: #2e7ecb;
-      font-weight: bold;
-    }
-
-    #myScore {
-      position: relative;
-      text-align: center;
-      font-weight: bold;
-      color: khaki;
-    }
-    #highScore {
-      position: relative;
-      text-align: center;
-      font-weight: bold;
-      color: lightcoral;
-    }
+    
   }
+
+#GameOverText {
+  color: #ca0000;
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
+#PressSpaceText {
+  color: #2e7ecb;
+  font-weight: bold;
+}
+
+#myScore {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: khaki;
+}
+#highScore {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: lightcoral;
 }

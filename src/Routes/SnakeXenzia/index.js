@@ -371,7 +371,7 @@ class SnakeGame extends React.Component {
 
     return (
       <div className='snake-xenzia'>
-        <h3>Snake Xenzia</h3>
+        <h3 className='heading'>Snake Xenzia</h3>
         <div
           id="GameBoard"
           style={{

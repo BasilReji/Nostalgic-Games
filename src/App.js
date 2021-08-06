@@ -22,6 +22,9 @@ function App() {
             <li>
               <Link to={ROUTES.SNAKE}>Snake Zenzia</Link>
             </li>
+            <li>
+              <Link to={ROUTES.TIK_TAK_TOE}>Tik Tak Toe</Link>
+            </li>
           </ul>
         </div>
       </div>

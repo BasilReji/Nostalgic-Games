@@ -1,0 +1,58 @@
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.square {
+  float: left;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 34px;
+  height: 6rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 6rem;
+  border: 1px solid #fff;
+  background-color: black;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.function-button {
+  padding: 0;
+  border: none;
+  background: #000;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.function-button:disabled {
+  opacity: 0.5;
+}
+.square:focus,
+.function-button:focus {
+  outline: none;
+}
+.icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.game {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+#root {
+  height: 100%;
+}
