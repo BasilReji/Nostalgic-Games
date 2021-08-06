@@ -1,0 +1,157 @@
+.mainHeader {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    flex: 0 0 auto;
+    min-width: 50px;
+    display: flex ;
+	flex-wrap: wrap;
+    svg {
+      min-width: 100%;
+    }
+    h3 {
+      font-size: 15px;
+	  color: aqua;
+    }
+    &:hover,
+    &:focus {
+      color: theme-colors("foreground", "yellow");
+    }
+  }
+}
+
+/*
+
+@import "../../sass/helpers/controls";
+.chq-landing-header {
+  &.chq-navbar-fixed {
+    padding: 10px 60px;
+    background-color: theme-colors("primary", "dark", 0.9);
+    @include transition(all 0.8s ease-in-out);
+    @include box-shadow(0 1px 8px theme-colors("primary", "base", 0.1));
+    @include media("<phone") {
+      padding: 20px 20px;
+    }
+    @include media(">=phone", "<576px") {
+      padding: 20px 30px;
+    }
+    @include media(">=576px", "<=tablet") {
+      padding: 20px 30px;
+    }
+  }
+  .chq-header-block {
+    flex: 1 1 auto;
+    @extend %flexbox;
+    @extend %item-center;
+    @extend %justify-between;
+    @include media("<phone") {
+      @include flex-direction(column);
+    }
+    @include media(">=phone", "<576px") {
+      @include flex-direction(column);
+    }
+    &__logo {
+      flex: 0 0 auto;
+      margin: 0px;
+      @extend %flex-column;
+      @extend %all-center;
+      a {
+        flex: 0 0 auto;
+        max-width: 100px;
+        @extend %flexbox;
+        @extend %all-center;
+        img {
+          min-width: 100%;
+        }
+        h3 {
+          font-size: 15px;
+          padding-top: 10px;
+        }
+        &:hover,
+          &:focus {
+            color: theme-colors("foreground", "yellow");
+          }
+      }
+    }
+    &__menu {
+      flex: 0 0 auto;
+      margin-left: auto;
+      @extend %flexbox;
+      @extend %item-center;
+      @include media("<phone") {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+      @include media(">=phone", "<576px") {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+      @include media(">=576px", "<=tablet") {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+      @include media(">=tablet", "<=992px") {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+      li {
+        flex: 0 0 auto;
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        a {
+          flex: 0 0 auto;
+          padding: 0 8px;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-family: $font-head;
+          font-size: 14px;
+          color: theme-colors("background", "white");
+          cursor: pointer;
+          @extend %flex-column;
+          @extend %all-center;
+          &:hover,
+          &:focus {
+            color: theme-colors("foreground", "yellow");
+          }
+        }
+        .chq-login-pane {
+          flex: 1 1 auto;
+          @extend %flex-column;
+          .chq-buttons {
+            padding: 4px 20px;
+            min-height: 34px;
+            max-height: 34px;
+            background-color: theme-colors("foreground", "yellow");
+            @include border-radius(50px);
+            @extend %flexbox;
+            @extend %item-center;
+            a {
+              flex: 0 0 auto;
+              padding: 0px;
+              color: theme-colors("primary", "light");
+              &:hover,
+              &:focus {
+                color: theme-colors("primary", "light");
+              }
+            }
+            .nav-slash {
+              flex: 0 0 auto;
+              padding: 0px 4px;
+              font-weight: 700;
+              font-size: 18px;
+              color: theme-colors("primary", "light");
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/

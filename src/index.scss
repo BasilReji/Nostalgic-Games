@@ -1,0 +1,21 @@
+.games-container {
+  .games-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+      }
+      a {
+        text-align: center;
+      }
+    }
+  }
+}
