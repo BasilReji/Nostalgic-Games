@@ -95,7 +95,8 @@ export default class Board extends Component {
     if (winner) {
       status = "Winner: " + winner;
     } else {
-      status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+      if (!this.state.squares.includes(null)) status = "Draw!";
+      else status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
     return (
       <div>
