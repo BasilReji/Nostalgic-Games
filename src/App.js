@@ -17,7 +17,7 @@ function App() {
               <Link to={ROUTES.DINO}>Chrome Dino</Link>
             </li>
             <li>
-              <Link to={ROUTES.QUIZ}>Quiz</Link>
+              <Link to={ROUTES.QUIZ}>Tech Quiz</Link>
             </li>
           </ul>
         </div>
