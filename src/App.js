@@ -19,6 +19,9 @@ function App() {
             <li>
               <Link to={ROUTES.QUIZ}>Tech Quiz</Link>
             </li>
+            <li>
+              <Link to={ROUTES.SNAKE}>Snake Zenzia</Link>
+            </li>
           </ul>
         </div>
       </div>

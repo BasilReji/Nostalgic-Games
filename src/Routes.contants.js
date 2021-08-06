@@ -3,4 +3,5 @@ export const ROUTES = {
   DINO: "/dino",
   MINE: "/mine",
   QUIZ: "/quiz",
+  SNAKE: "/snake",
 };

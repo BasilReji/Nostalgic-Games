@@ -12,6 +12,7 @@ import DinoGame from "./Routes/DinoGame";
 import MineSweeper from "./Routes/MineSweeper";
 import QuizGame from "./Routes/Quiz";
 import Header from "./components/Header";
+import SnakeGame from "./Routes/SnakeXenzia";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,8 +21,10 @@ ReactDOM.render(
       <Switch>
         <Route exact path={ROUTES.MINE} component={MineSweeper} />
         <Route path={ROUTES.DINO} component={DinoGame} />
+        <Route path={ROUTES.SNAKE} component={SnakeGame} />
         <Route path={ROUTES.QUIZ} component={QuizGame} />
         <Route path={ROUTES.INDEX} component={App} />
+        
         <Redirect from={ROUTES.INDEX} to={ROUTES.INDEX} />
       </Switch>
     </Router>
