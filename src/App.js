@@ -13,9 +13,9 @@ function App() {
             <li>
               <Link to={ROUTES.MINE}>Mine Sweeper</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={ROUTES.DINO}>Chrome Dino</Link>
-            </li>
+            </li> */}
             <li>
               <Link to={ROUTES.QUIZ}>Tech Quiz</Link>
             </li>
