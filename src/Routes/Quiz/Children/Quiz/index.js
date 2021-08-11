@@ -32,6 +32,8 @@ const Option = styled.button`
   transition: 0.3s;
   font-size: 1em;
   outline: none;
+  min-width: 500px;
+  max-width: 500px;
   user-select: none;
   margin-top: 1em;
   cursor: pointer;
