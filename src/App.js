@@ -25,6 +25,9 @@ function App() {
             <li>
               <Link to={ROUTES.TIK_TAK_TOE}>Tik Tak Toe</Link>
             </li>
+            <li>
+              <Link to={ROUTES.STOP_WATCH}>Stop Watch</Link>
+            </li>
           </ul>
         </div>
       </div>

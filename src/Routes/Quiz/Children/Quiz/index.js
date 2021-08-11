@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import axios from "axios";
 import GameOver from "../GameOver";
+import { QUIZ_QUESTIONS } from "../../../../Dummy/QuizQuestions";
+import { shuffleArray } from "../../../../utils/ArrayFunctions";
 
 const QuizWindow = styled.div`
   text-align: center;
@@ -63,20 +64,13 @@ const Quiz = ({ setStart }) => {
   };
 
   useEffect(() => {
-    axios
-      .get(
-        "https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple"
-      )
-      .then((res) => {
-        setQuiz(
-          res.data.results.map((item) => ({
-            question: item.question,
-            options: shuffle([...item.incorrect_answers, item.correct_answer]),
-            answer: item.correct_answer,
-          }))
-        );
-      })
-      .catch((err) => console.error(err));
+    setQuiz(
+      shuffleArray(QUIZ_QUESTIONS).map((item) => ({
+        question: item.question,
+        options: shuffle([...item.incorrect_answers, item.correct_answer]),
+        answer: item.correct_answer,
+      }))
+    );
   }, []);
 
   return (

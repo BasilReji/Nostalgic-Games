@@ -14,6 +14,7 @@ import QuizGame from "./Routes/Quiz";
 import Header from "./components/Header";
 import SnakeGame from "./Routes/SnakeXenzia";
 import TikTakToe from "./Routes/TikTakToe";
+import StopWatch from "./components/StopWatch";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -25,6 +26,7 @@ ReactDOM.render(
         <Route path={ROUTES.SNAKE} component={SnakeGame} />
         <Route path={ROUTES.QUIZ} component={QuizGame} />
         <Route path={ROUTES.TIK_TAK_TOE} component={TikTakToe} />
+        <Route path={ROUTES.STOP_WATCH} component={StopWatch} />
         <Route path={ROUTES.INDEX} component={App} />
 
         <Redirect from={ROUTES.INDEX} to={ROUTES.INDEX} />

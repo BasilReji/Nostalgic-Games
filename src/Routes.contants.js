@@ -4,5 +4,6 @@ export const ROUTES = {
   MINE: "/mine",
   QUIZ: "/quiz",
   SNAKE: "/snake",
-  TIK_TAK_TOE:'/tiktaktoe'
+  TIK_TAK_TOE: "/tiktaktoe",
+  STOP_WATCH: "/stop-watch",
 };
