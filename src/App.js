@@ -28,6 +28,9 @@ function App() {
             <li>
               <Link to={ROUTES.STOP_WATCH}>Stop Watch</Link>
             </li>
+            <li>
+              <Link to={ROUTES.ROCK_PAPER_SCISSORS}>Rock Paper Scissors</Link>
+            </li>
           </ul>
         </div>
       </div>

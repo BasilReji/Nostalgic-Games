@@ -15,6 +15,7 @@ import Header from "./components/Header";
 import SnakeGame from "./Routes/SnakeXenzia";
 import TikTakToe from "./Routes/TikTakToe";
 import StopWatch from "./components/StopWatch";
+import RockPaperScissors from "./Routes/RockPaperScissors";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,6 +28,10 @@ ReactDOM.render(
         <Route path={ROUTES.QUIZ} component={QuizGame} />
         <Route path={ROUTES.TIK_TAK_TOE} component={TikTakToe} />
         <Route path={ROUTES.STOP_WATCH} component={StopWatch} />
+        <Route
+          path={ROUTES.ROCK_PAPER_SCISSORS}
+          component={RockPaperScissors}
+        />
         <Route path={ROUTES.INDEX} component={App} />
 
         <Redirect from={ROUTES.INDEX} to={ROUTES.INDEX} />
