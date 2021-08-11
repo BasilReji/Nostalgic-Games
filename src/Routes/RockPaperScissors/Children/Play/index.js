@@ -170,7 +170,7 @@ function Play(props) {
         <div className="pick">
           <div className="pick__title result__desktop">The House Picked:</div>
           <div className="pick__item">
-            <span>{countDown}</span>
+            <span className='pick-counter'>{countDown}</span>
           </div>
           <div className="pick__title result__mobile">The House Picked:</div>
         </div>
