@@ -1,21 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 import {
   BrowserRouter as Router,
   Route,
   Switch,
   Redirect,
-} from "react-router-dom";
-import { ROUTES } from "./Routes.contants";
-import DinoGame from "./Routes/DinoGame";
-import MineSweeper from "./Routes/MineSweeper";
-import QuizGame from "./Routes/Quiz";
-import Header from "./components/Header";
-import SnakeGame from "./Routes/SnakeXenzia";
-import TikTakToe from "./Routes/TikTakToe";
-import StopWatch from "./components/StopWatch";
-import RockPaperScissors from "./Routes/RockPaperScissors";
+} from 'react-router-dom';
+import { ROUTES } from './Routes.contants';
+import DinoGame from './Routes/DinoGame';
+import MineSweeper from './Routes/MineSweeper';
+import QuizGame from './Routes/Quiz';
+import Header from './components/Header';
+import SnakeGame from './Routes/SnakeXenzia';
+import TikTakToe from './Routes/TikTakToe';
+import StopWatch from './components/StopWatch';
+import RockPaperScissors from './Routes/RockPaperScissors';
+import Quotes from './Routes/Quotes';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Route path={ROUTES.QUIZ} component={QuizGame} />
         <Route path={ROUTES.TIK_TAK_TOE} component={TikTakToe} />
         <Route path={ROUTES.STOP_WATCH} component={StopWatch} />
+        <Route path={ROUTES.QUOTES} component={Quotes} />
         <Route
           path={ROUTES.ROCK_PAPER_SCISSORS}
           component={RockPaperScissors}
@@ -38,5 +40,5 @@ ReactDOM.render(
       </Switch>
     </Router>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );

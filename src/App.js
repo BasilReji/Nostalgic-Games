@@ -1,15 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./App.css";
-import { ROUTES } from "./Routes.contants";
-import "./index.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './App.css';
+import { ROUTES } from './Routes.contants';
+import './index.scss';
 function App() {
   return (
     <div>
-      <div className="heading">
+      <div className='heading'>
         <h1>Games</h1>
-        <div className="games-container">
-          <ul className="games-list">
+        <div className='games-container'>
+          <ul className='games-list'>
             <li>
               <Link to={ROUTES.MINE}>Mine Sweeper</Link>
             </li>
@@ -30,6 +30,9 @@ function App() {
             </li>
             <li>
               <Link to={ROUTES.ROCK_PAPER_SCISSORS}>Rock Paper Scissors</Link>
+            </li>
+            <li>
+              <Link to={ROUTES.QUOTES}>Random quotes</Link>
             </li>
           </ul>
         </div>
