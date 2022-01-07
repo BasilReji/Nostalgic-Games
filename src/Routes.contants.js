@@ -8,4 +8,5 @@ export const ROUTES = {
   STOP_WATCH: '/stop-watch',
   ROCK_PAPER_SCISSORS: '/rock-paper-scissors',
   QUOTES: '/quotes',
+  HANGMAN: '/hangman',
 };

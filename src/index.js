@@ -17,6 +17,7 @@ import TikTakToe from './Routes/TikTakToe';
 import StopWatch from './components/StopWatch';
 import RockPaperScissors from './Routes/RockPaperScissors';
 import Quotes from './Routes/Quotes';
+import Hangman from './Routes/Hangman';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -30,6 +31,7 @@ ReactDOM.render(
         <Route path={ROUTES.TIK_TAK_TOE} component={TikTakToe} />
         <Route path={ROUTES.STOP_WATCH} component={StopWatch} />
         <Route path={ROUTES.QUOTES} component={Quotes} />
+        <Route path={ROUTES.HANGMAN} component={Hangman} />
         <Route
           path={ROUTES.ROCK_PAPER_SCISSORS}
           component={RockPaperScissors}
